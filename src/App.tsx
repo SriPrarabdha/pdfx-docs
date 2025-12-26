@@ -30,7 +30,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/pdfx-docs">
         <Routes>
           <Route element={<DocLayout />}>
             <Route path="/" element={<Overview />} />
