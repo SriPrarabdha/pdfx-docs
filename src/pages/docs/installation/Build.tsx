@@ -7,9 +7,26 @@ export default function Build() {
       title="Build from Source"
       description="Compile pdfx from source code using Go."
     >
+      {/* Special Note */}
+      <div className="mb-10 rounded-xl border border-amber-300/40 bg-gradient-to-r from-amber-50 to-orange-50 px-6 py-4 text-sm text-foreground">
+        <p className="font-semibold mb-2">⚠️ Before you build from source</p>
+        <p className="text-muted-foreground leading-relaxed">
+          Building pdfx from source is intended for developers who want to
+          contribute, customize the codebase, or experiment with internal
+          changes.
+        </p>
+        <p className="mt-2 text-muted-foreground leading-relaxed">
+          If your goal is simply to <strong>use pdfx as a CLI tool</strong>,
+          we strongly recommend downloading the <strong>prebuilt binary </strong>
+          from the GitHub releases and getting started immediately—no Go setup
+          or build steps required.
+        </p>
+      </div>
+
       <DocSection title="Prerequisites">
         <p className="mb-4">
-          You need Go 1.21 or later installed on your system.
+          To build pdfx from source, you need Go 1.21 or later installed on your
+          system.
         </p>
         <CodeBlock
           title="Check Go version"
@@ -20,7 +37,7 @@ export default function Build() {
       <DocSection title="Clone and Build">
         <CodeBlock
           code={`# Clone the repository
-git clone https://github.com/yourusername/pdfx
+git clone https://github.com/SriPrarabdha/pdfx.git
 cd pdfx
 
 # Build the binary
@@ -31,19 +48,12 @@ go install`}
         />
       </DocSection>
 
-      <DocSection title="Install to PATH">
-        <p className="mb-4">
-          After building, move the binary to a directory in your PATH:
-        </p>
-        <CodeBlock code="sudo mv pdfx /usr/local/bin/" />
-      </DocSection>
-
       <DocSection title="Verify Build">
         <CodeBlock
-          code={`# Check version
+          code={`# Check available commands
 pdfx --help
 
-# Verify dependencies
+# Verify optional dependencies
 pdfx doctor`}
         />
       </DocSection>

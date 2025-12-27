@@ -8,7 +8,7 @@ export default function MergePDF() {
       description="Combine multiple PDF files into a single document."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx merge <pdf1> <pdf2> [pdf3 ...] -o <output.pdf>" />
+        <CodeBlock code="./pdfx-linux-amd64 merge <pdf1> <pdf2> [pdf3 ...] -o <output.pdf>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -27,15 +27,15 @@ export default function MergePDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Merge two PDFs"
-            code="pdfx merge document1.pdf document2.pdf -o combined.pdf"
+            code="./pdfx-linux-amd64 merge document1.pdf document2.pdf -o combined.pdf"
           />
           <CodeBlock
             title="Merge multiple PDFs"
-            code="pdfx merge a.pdf b.pdf c.pdf d.pdf -o all.pdf"
+            code="./pdfx-linux-amd64 merge a.pdf b.pdf c.pdf d.pdf -o all.pdf"
           />
           <CodeBlock
             title="Merge with wildcard (shell expansion)"
-            code="pdfx merge chapter_*.pdf -o book.pdf"
+            code="./pdfx-linux-amd64 merge chapter_*.pdf -o book.pdf"
           />
         </div>
       </DocSection>

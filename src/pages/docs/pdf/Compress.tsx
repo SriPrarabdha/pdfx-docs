@@ -8,7 +8,7 @@ export default function CompressPDF() {
       description="Reduce PDF file size with configurable quality levels."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx compress <input.pdf> --level <good|better|best> -o <output.pdf>" />
+        <CodeBlock code="./pdfx-linux-amd64 compress <input.pdf> --level <good|better|best> -o <output.pdf>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -43,15 +43,15 @@ export default function CompressPDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Maximum compression"
-            code="pdfx compress large.pdf --level best -o small.pdf"
+            code="./pdfx-linux-amd64 compress large.pdf --level best -o small.pdf"
           />
           <CodeBlock
             title="Balanced compression (default)"
-            code="pdfx compress document.pdf -o document_compressed.pdf"
+            code="./pdfx-linux-amd64 compress document.pdf -o document_compressed.pdf"
           />
           <CodeBlock
             title="High quality compression"
-            code="pdfx compress photos.pdf --level good -o photos_compressed.pdf"
+            code="./pdfx-linux-amd64 compress photos.pdf --level good -o photos_compressed.pdf"
           />
         </div>
       </DocSection>
@@ -59,7 +59,7 @@ export default function CompressPDF() {
       <DocSection title="Requirements">
         <p>
           This command requires <strong>Ghostscript</strong> to be installed. 
-          Run <code className="font-mono bg-muted px-1 rounded">pdfx doctor</code> to verify.
+          Run <code className="font-mono bg-muted px-1 rounded">./pdfx-linux-amd64 doctor</code> to verify.
         </p>
       </DocSection>
     </DocPage>

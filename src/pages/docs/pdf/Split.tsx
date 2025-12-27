@@ -8,7 +8,7 @@ export default function SplitPDF() {
       description="Extract pages into separate PDF files."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx split <input.pdf> --pages <ranges>" />
+        <CodeBlock code="./pdfx-linux-amd64 split <input.pdf> --pages <ranges>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -39,7 +39,7 @@ export default function SplitPDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Split first 3 pages"
-            code="pdfx split report.pdf --pages 1-3"
+            code="./pdfx-linux-amd64 split report.pdf --pages 1-3"
           />
           <p className="text-sm text-muted-foreground">
             Creates: <code className="font-mono bg-muted px-1 rounded">report_page_1.pdf</code>, 
@@ -50,7 +50,7 @@ export default function SplitPDF() {
         <div className="space-y-4 mt-6">
           <CodeBlock
             title="Split specific pages"
-            code="pdfx split document.pdf --pages 1,5,n"
+            code="./pdfx-linux-amd64 split document.pdf --pages 1,5,n"
           />
         </div>
       </DocSection>

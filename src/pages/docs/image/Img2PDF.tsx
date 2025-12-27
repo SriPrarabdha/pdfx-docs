@@ -8,7 +8,7 @@ export default function Img2PDF() {
       description="Convert one or more images into a PDF document."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx img2pdf <image1> <image2> [...] -o <output.pdf>" />
+        <CodeBlock code="./pdfx-linux-amd64 img2pdf <image1> <image2> [...] -o <output.pdf>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -40,15 +40,15 @@ export default function Img2PDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Convert multiple images"
-            code="pdfx img2pdf a.jpg b.png -o images.pdf"
+            code="./pdfx-linux-amd64 img2pdf a.jpg b.png -o images.pdf"
           />
           <CodeBlock
             title="Convert all JPGs in folder"
-            code="pdfx img2pdf *.jpg -o album.pdf"
+            code="./pdfx-linux-amd64 img2pdf *.jpg -o album.pdf"
           />
           <CodeBlock
             title="Create photo book"
-            code="pdfx img2pdf photo_001.jpg photo_002.jpg photo_003.jpg -o photobook.pdf"
+            code="./pdfx-linux-amd64 img2pdf photo_001.jpg photo_002.jpg photo_003.jpg -o photobook.pdf"
           />
         </div>
       </DocSection>

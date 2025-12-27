@@ -8,7 +8,7 @@ export default function Doctor() {
       description="Verify system dependencies and troubleshoot issues."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx doctor" />
+        <CodeBlock code="./pdfx-linux-amd64 doctor" />
         <p className="mt-4">
           The doctor command checks if all required external tools are installed and available in your PATH.
         </p>
@@ -33,7 +33,7 @@ export default function Doctor() {
 
       <DocSection title="Example Output">
         <CodeBlock
-          code={`$ pdfx doctor
+          code={`$ ./pdfx-linux-amd64 doctor
 ✓ ghostscript ... found
 ✓ pandoc ....... found
 ✓ libreoffice .. found

@@ -12,7 +12,7 @@ export default function Binary() {
           The easiest way to install pdfx is to download the pre-built binary from GitHub Releases.
         </p>
         <a
-          href="https://github.com/yourusername/pdfx/releases"
+          href="https://github.com/SriPrarabdha/pdfx/releases"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors mb-6"
@@ -25,13 +25,13 @@ export default function Binary() {
         <CodeBlock
           code={`# Download the binary for your platform
 # Make it executable
-chmod +x pdfx
+sudo chmod +x pdfx-linux-amd64
 
-# Move to a directory in your PATH
-sudo mv pdfx /usr/local/bin/
+# Move to your prefered location
+mv pdfx-linux-amd64 ~/Desktop
 
 # Verify installation
-pdfx --help`}
+./pdfx-linux-amd64 --help`}
         />
       </DocSection>
 
@@ -41,17 +41,16 @@ pdfx --help`}
         </p>
         <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
           <li>Download <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">pdfx.exe</code> from GitHub Releases</li>
-          <li>Move it to a folder like <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">C:\Program Files\pdfx</code></li>
-          <li>Add that folder to your system PATH</li>
-          <li>Open a new terminal and run <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">pdfx --help</code></li>
+          <li>Move it to a any folder like <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">Desktop\pdfx-windows-amd64.exe</code></li>
+          <li>Right-click inside that folder and select <strong>"Open in Terminal" </strong> , then run the command <code className="font-mono text-sm bg-muted px-1 py-0.5 rounded">.\pdfx-windows-amd64.exe --help</code></li>
         </ol>
       </DocSection>
 
-      <DocSection title="Verify Installation">
+      <DocSection title="Verify Dependencies">
         <p className="mb-4">
-          After installation, verify everything works:
+          After installation, verify dependencies works:
         </p>
-        <CodeBlock code="pdfx doctor" />
+        <CodeBlock code=".\pdfx-windows-amd64.exe doctor" />
       </DocSection>
     </DocPage>
   );

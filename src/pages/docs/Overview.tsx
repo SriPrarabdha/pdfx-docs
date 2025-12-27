@@ -68,15 +68,15 @@ export default function Overview() {
         <div className="space-y-4">
           <CodeBlock
             title="Merge multiple PDFs"
-            code="pdfx merge a.pdf b.pdf c.pdf -o merged.pdf"
+            code="./pdfx-linux-amd64 merge a.pdf b.pdf c.pdf -o merged.pdf"
           />
           <CodeBlock
             title="Delete specific pages"
-            code="pdfx delete report.pdf --pages 1,3-5,n -o cleaned.pdf"
+            code="./pdfx-linux-amd64 delete report.pdf --pages 1,3-5,n -o cleaned.pdf"
           />
           <CodeBlock
             title="Compress a PDF"
-            code="pdfx compress large.pdf --level best -o small.pdf"
+            code="./pdfx-linux-amd64 compress large.pdf --level best -o small.pdf"
           />
         </div>
       </DocSection>

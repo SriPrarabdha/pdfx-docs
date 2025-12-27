@@ -20,11 +20,11 @@ const navigationSections: NavSection[] = [
     title: "Installation",
     icon: <Download className="h-4 w-4" />,
     items: [
-      { title: "Quick Start", href: "/installation/quick-start" },
-      { title: "Dependencies", href: "/installation/dependencies" },
       { title: "Binary Download", href: "/installation/binary" },
       { title: "Build from Source", href: "/installation/build" },
+      { title: "Dependencies", href: "/installation/dependencies" },
       { title: "Doctor Command", href: "/installation/doctor" },
+      // { title: "Quick Start", href: "/installation/quick-start" },
     ],
   },
   {

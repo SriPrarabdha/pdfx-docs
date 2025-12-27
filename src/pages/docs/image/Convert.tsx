@@ -8,7 +8,7 @@ export default function ConvertImage() {
       description="Convert images between different formats."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx img-convert <image> -o <output>" />
+        <CodeBlock code="./pdfx-linux-amd64 img-convert <image> -o <output>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -52,15 +52,15 @@ export default function ConvertImage() {
         <div className="space-y-4">
           <CodeBlock
             title="WebP to PNG"
-            code="pdfx img-convert image.webp -o image.png"
+            code="./pdfx-linux-amd64 img-convert image.webp -o image.png"
           />
           <CodeBlock
             title="PNG to JPG"
-            code="pdfx img-convert screenshot.png -o screenshot.jpg"
+            code="./pdfx-linux-amd64 img-convert screenshot.png -o screenshot.jpg"
           />
           <CodeBlock
             title="BMP to PNG"
-            code="pdfx img-convert legacy.bmp -o modern.png"
+            code="./pdfx-linux-amd64 img-convert legacy.bmp -o modern.png"
           />
         </div>
       </DocSection>

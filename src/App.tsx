@@ -35,10 +35,10 @@ const App = () => (
           <Route element={<DocLayout />}>
             <Route path="/" element={<Overview />} />
             {/* Installation */}
-            <Route path="/installation/quick-start" element={<QuickStart />} />
-            <Route path="/installation/dependencies" element={<Dependencies />} />
             <Route path="/installation/binary" element={<Binary />} />
             <Route path="/installation/build" element={<Build />} />
+            <Route path="/installation/dependencies" element={<Dependencies />} />
+            <Route path="/installation/quick-start" element={<QuickStart />} />
             <Route path="/installation/doctor" element={<Doctor />} />
             {/* PDF Operations */}
             <Route path="/pdf/merge" element={<MergePDF />} />

@@ -8,7 +8,7 @@ export default function DeletePDF() {
       description="Remove specific pages from a PDF document."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx delete <input.pdf> --pages <ranges> -o <output.pdf>" />
+        <CodeBlock code="./pdfx-linux-amd64 delete <input.pdf> --pages <ranges> -o <output.pdf>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -44,15 +44,15 @@ export default function DeletePDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Delete a single page"
-            code="pdfx delete file.pdf --pages 3 -o out.pdf"
+            code="./pdfx-linux-amd64 delete file.pdf --pages 3 -o out.pdf"
           />
           <CodeBlock
             title="Delete multiple pages"
-            code="pdfx delete file.pdf --pages 1,4-6,n -o cleaned.pdf"
+            code="./pdfx-linux-amd64 delete file.pdf --pages 1,4-6,n -o cleaned.pdf"
           />
           <CodeBlock
             title="Delete first and last page"
-            code="pdfx delete document.pdf --pages 1,n -o trimmed.pdf"
+            code="./pdfx-linux-amd64 delete document.pdf --pages 1,n -o trimmed.pdf"
           />
         </div>
       </DocSection>

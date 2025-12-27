@@ -8,7 +8,7 @@ export default function CompressImage() {
       description="Reduce image file size with configurable quality levels."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx img-compress <image> --level <good|better|best> -o <output>" />
+        <CodeBlock code="./pdfx-linux-amd64 img-compress <image> --level <good|better|best> -o <output>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -67,11 +67,11 @@ export default function CompressImage() {
         <div className="space-y-4">
           <CodeBlock
             title="Maximum compression"
-            code="pdfx img-compress photo.jpg --level best -o photo_small.jpg"
+            code="./pdfx-linux-amd64 img-compress photo.jpg --level best -o photo_small.jpg"
           />
           <CodeBlock
             title="Balanced compression"
-            code="pdfx img-compress screenshot.png -o screenshot_compressed.png"
+            code="./pdfx-linux-amd64 img-compress screenshot.png -o screenshot_compressed.png"
           />
         </div>
       </DocSection>

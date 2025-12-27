@@ -8,7 +8,7 @@ export default function ConvertPDF() {
       description="Convert documents and text files to PDF format."
     >
       <DocSection title="Usage">
-        <CodeBlock code="pdfx convert <input.file> -o <output.pdf>" />
+        <CodeBlock code="./pdfx-linux-amd64 convert <input.file> -o <output.pdf>" />
       </DocSection>
 
       <DocSection title="Flags">
@@ -41,15 +41,15 @@ export default function ConvertPDF() {
         <div className="space-y-4">
           <CodeBlock
             title="Convert Word document"
-            code="pdfx convert resume.docx -o resume.pdf"
+            code="./pdfx-linux-amd64 convert resume.docx -o resume.pdf"
           />
           <CodeBlock
             title="Convert Markdown file"
-            code="pdfx convert notes.md -o notes.pdf"
+            code="./pdfx-linux-amd64 convert notes.md -o notes.pdf"
           />
           <CodeBlock
             title="Convert PowerPoint presentation"
-            code="pdfx convert slides.pptx -o slides.pdf"
+            code="./pdfx-linux-amd64 convert slides.pptx -o slides.pdf"
           />
         </div>
       </DocSection>
@@ -66,7 +66,7 @@ export default function ConvertPDF() {
           </li>
         </ul>
         <p className="mt-4">
-          Run <code className="font-mono bg-muted px-1 rounded">pdfx doctor</code> to verify these are installed.
+          Run <code className="font-mono bg-muted px-1 rounded">./pdfx-linux-amd64 doctor</code> to verify these are installed.
         </p>
       </DocSection>
     </DocPage>
